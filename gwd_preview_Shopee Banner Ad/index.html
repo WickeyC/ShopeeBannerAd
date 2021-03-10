@@ -2675,6 +2675,14 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
       // GWD Predefined Function
       gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_3', 'slide', 1000, 'linear', 'left');
     };
+    gwd.auto_Gwd_taparea_2Click = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdGoogleAd.exit('gwd-ad', 'how to register for an account', 'https://help.shopee.com.my/my/s/article/How-do-I-register-for-an-account', true, true, 'page1_4');
+    };
+    gwd.auto_Asset_2_1Click = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdGoogleAd.exit('gwd-ad', 'Logo', 'https://shopee.com.my/', true, true, 'page1_4');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Support code for event handling in Google Web Designer
@@ -2693,6 +2701,8 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
       gwd.actions.events.addHandler('button_3', 'click', gwd.auto_Button_3Click, false);
       gwd.actions.events.addHandler('button_1', 'click', gwd.auto_Button_1Click, false);
       gwd.actions.events.addHandler('button_4', 'click', gwd.auto_Button_4Click, false);
+      gwd.actions.events.addHandler('gwd-taparea_2', 'click', gwd.auto_Gwd_taparea_2Click, false);
+      gwd.actions.events.addHandler('Asset_2_1', 'click', gwd.auto_Asset_2_1Click, false);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click, false);
@@ -2708,6 +2718,8 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
       gwd.actions.events.removeHandler('button_3', 'click', gwd.auto_Button_3Click, false);
       gwd.actions.events.removeHandler('button_1', 'click', gwd.auto_Button_1Click, false);
       gwd.actions.events.removeHandler('button_4', 'click', gwd.auto_Button_4Click, false);
+      gwd.actions.events.removeHandler('gwd-taparea_2', 'click', gwd.auto_Gwd_taparea_2Click, false);
+      gwd.actions.events.removeHandler('Asset_2_1', 'click', gwd.auto_Asset_2_1Click, false);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
@@ -2741,16 +2753,16 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
     <gwd-pagedeck class="gwd-page-container" id="pagedeck" default-page="page1">
       <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Angpao">
         <div class="gwd-page-content gwd-page-size">
-          <gwd-image id="pexels-rodnae-productions-6692117" source="pexels-rodnae-productions-6692117.jpg?1615340182330" scaling="stretch" class="gwd-image-1rj3"></gwd-image>
-          <gwd-image id="Rectangle_1_1" source="Rectangle_1.png?1615340182330" scaling="stretch" class="gwd-image-1e66"></gwd-image>
+          <gwd-image id="pexels-rodnae-productions-6692117" source="pexels-rodnae-productions-6692117.jpg?1615340723394" scaling="stretch" class="gwd-image-1rj3"></gwd-image>
+          <gwd-image id="Rectangle_1_1" source="Rectangle_1.png?1615340723394" scaling="stretch" class="gwd-image-1e66"></gwd-image>
           <gwd-imagebutton id="gwd-imagebutton_1" up-image="Angpao__1_.png" over-image="AngpaoHover__3_.png" down-image="AngpaoOnClick__3_.png" scaling="auto" class="gwd-imagebutton-1frw gwd-gen-go6pgwdanimation" data-gwd-name="Angpao" alignment="bottom"></gwd-imagebutton>
         </div>
       </gwd-page>
       <gwd-page id="page1_1" class="gwd-page-wrapper gwd-lightbox gwd-page-o17o" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Main Banner">
         <div class="gwd-page-content gwd-div-5btw">
-          <gwd-image id="pexels-rodnae-productions-6692117_1" source="pexels-rodnae-productions-6692117.jpg?1615340182330" scaling="stretch" class="gwd-image-1rj3"></gwd-image>
-          <gwd-image id="moneytree_1" source="moneytree.png?1615340182330" scaling="stretch" class="gwd-image-trrk gwd-image-ighx gwd-gen-1gulgwdanimation"></gwd-image>
-          <gwd-image id="Rectangle_1" source="Rectangle_1.png?1615340182330" scaling="stretch" class="gwd-image-1eog"></gwd-image>
+          <gwd-image id="pexels-rodnae-productions-6692117_1" source="pexels-rodnae-productions-6692117.jpg?1615340723394" scaling="stretch" class="gwd-image-1rj3"></gwd-image>
+          <gwd-image id="moneytree_1" source="moneytree.png?1615340723394" scaling="stretch" class="gwd-image-trrk gwd-image-ighx gwd-gen-1gulgwdanimation"></gwd-image>
+          <gwd-image id="Rectangle_1" source="Rectangle_1.png?1615340723394" scaling="stretch" class="gwd-image-1eog"></gwd-image>
           <gwd-imagebutton id="gwd-imagebutton_5" up-image="image_3__1_.png" over-image="" down-image="image_3__1_.png" scaling="cover" class="gwd-imagebutton-17i9" data-gwd-name="PlayStore"></gwd-imagebutton>
           <gwd-transitiongallery id="gwd-transitiongallery_1" class="gwd-transitiongallery-762z gwd-transitiongallery-1yae" easing="ease-in-out" transition-duration="1.5" scaling="cover" autoplay="" autoplay-frame-interval="4" autoplay-loop-count="0" enable-interactive-transition="" data-gwd-name="Promotions" navigation-highlight="rgba(224,156,38,1)" exit-urls="" gesture="none" images="draw1.png,draw2.png,draw3.png">
             <gwd-push direction="righttoleft"></gwd-push>
@@ -2798,7 +2810,7 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
             </div>
             <!--Waves end-->
           </div>
-          <gwd-image id="Asset_2" source="Asset_2.svg?1615340182330" scaling="stretch" class="gwd-image-qnlc"></gwd-image>
+          <gwd-image id="Asset_2" source="Asset_2.svg?1615340723394" scaling="stretch" class="gwd-image-qnlc"></gwd-image>
           <p class="gwd-p-1kfj text-tool-feedback"><span class="gwd-span-1k9a">#ShopeeLuckyDraw</span></p>
           <svg class="intro" viewBox="0 0 200 86">
             <text text-anchor="start" x="10" y="30" class="text text-stroke" clip-path="url(#text1)">Spend &amp; Win Big Prizes!</text>
@@ -2813,10 +2825,10 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
           <p class="gwd-p-bige gwd-p-1ddi gwd-gen-kx0xgwdanimation text-tool-feedback">iPad Air</p>
           <p class="gwd-p-bige gwd-p-1pdv gwd-gen-1sxkgwdanimation text-tool-feedback">Mercedes-Benz C-Class</p>
           <p class="gwd-p-bige gwd-p-1135 gwd-gen-k9s4gwdanimation text-tool-feedback">Apple Smart Watch</p>
-          <gwd-image id="ipad_1" source="ipad_1.png?1615340182330" scaling="stretch" class="gwd-image-1ln0 gwd-gen-2rd5gwdanimation"></gwd-image>
-          <gwd-image id="apple_watch" source="apple_watch.png?1615340182330" scaling="stretch" class="gwd-image-gmjl gwd-gen-196kgwdanimation"></gwd-image>
+          <gwd-image id="ipad_1" source="ipad_1.png?1615340723394" scaling="stretch" class="gwd-image-1ln0 gwd-gen-2rd5gwdanimation"></gwd-image>
+          <gwd-image id="apple_watch" source="apple_watch.png?1615340723394" scaling="stretch" class="gwd-image-gmjl gwd-gen-196kgwdanimation"></gwd-image>
           <button id="button_1" class="gwd-button-u8o8 gwd-button-1nws text-tool-feedback">How to Participate</button>
-          <div data-gwd-motion-path-node="x" class="gwd-motion-path-ourp-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-ourp-anim-y"><gwd-image id="mercedes_1" source="mercedes.png?1615340182330" scaling="stretch" class="gwd-image-9xug gwd-gen-mjw4gwdanimation"></gwd-image></div></div>
+          <div data-gwd-motion-path-node="x" class="gwd-motion-path-ourp-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-ourp-anim-y"><gwd-image id="mercedes_1" source="mercedes.png?1615340723394" scaling="stretch" class="gwd-image-9xug gwd-gen-mjw4gwdanimation"></gwd-image></div></div>
           <button id="button_3" class="gwd-button-tm6i text-tool-feedback">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.84182 3.13514C9.04327 3.32401 9.05348 3.64042 8.86462 3.84188L5.43521 7.49991L8.86462 11.1579C9.05348 11.3594 9.04327 11.6758 8.84182 11.8647C8.64036 12.0535 8.32394 12.0433 8.13508 11.8419L4.38508 7.84188C4.20477 7.64955 4.20477 7.35027 4.38508 7.15794L8.13508 3.15794C8.32394 2.95648 8.64036 2.94628 8.84182 3.13514Z" fill="#000000" fill-rule="evenodd" clip-rule="evenodd"></path>
@@ -2847,7 +2859,7 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
             </div>
             <!--Waves end-->
           </div>
-          <gwd-image id="Asset_2_1" source="Asset_2.svg?1615340182330" scaling="stretch" class="gwd-image-4wbs"></gwd-image>
+          <gwd-image id="Asset_2_1" source="Asset_2.svg?1615340723394" scaling="stretch" class="gwd-image-4wbs"></gwd-image>
           <svg class="intro_h" viewBox="0 0 200 86">
             <text text-anchor="start" x="10" y="30" class="text_h text-stroke_h" clip-path="url(#text1h)">How to Participate</text>
             <text text-anchor="start" x="10" y="30" class="text_h text-stroke_h text-stroke-2_h" clip-path="url(#text1h)">How to Participate</text>
@@ -2885,7 +2897,7 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
           </span>
           </span>
           </span>
-          <gwd-image id="icons8-info-50" source="icons8-info-50.png?1615340182330" scaling="stretch" class="gwd-image-j8m1 gwd-image-37ht"></gwd-image>
+          <gwd-image id="icons8-info-50" source="icons8-info-50.png?1615340723394" scaling="stretch" class="gwd-image-j8m1 gwd-image-37ht"></gwd-image>
           <gwd-taparea id="gwd-taparea_2" class="gwd-taparea-aj19"></gwd-taparea>
           <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 676 1" class="gwd-line-1m43">
             <line x1="0" x2="676" y1="0.5" y2="0.5"></line>
@@ -2899,13 +2911,13 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
           <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 676 1" class="gwd-line-1kcs">
             <line x1="0" x2="676" y1="0.5" y2="0.5"></line>
           </svg>
-          <gwd-image id="red_packet" source="red_packet.png?1615340182330" scaling="stretch" class="gwd-image-zdtf"></gwd-image>
-          <gwd-image id="icons8-coin-48_9" source="icons8-coin-48.png?1615340182330" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-gen-ldcngwdanimation"></gwd-image>
-          <gwd-image id="icons8-coin-48_12" source="icons8-coin-48.png?1615340182330" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-gen-1s8qgwdanimation gwd-image-467s"></gwd-image>
-          <gwd-image id="icons8-coin-48_14" source="icons8-coin-48.png?1615340182330" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-gen-1p2fgwdanimation gwd-image-60zi"></gwd-image>
-          <gwd-image id="icons8-coin-48_15" source="icons8-coin-48.png?1615340182330" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-image-60zi gwd-gen-1lnwgwdanimation gwd-image-4n9b"></gwd-image>
-          <gwd-image id="icons8-coin-48_16" source="icons8-coin-48.png?1615340182330" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-image-60zi gwd-image-4n9b gwd-image-mtnb gwd-gen-1irygwdanimation"></gwd-image>
-          <gwd-image id="icons8-coin-48_10" source="icons8-coin-48.png?1615340182330" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-gen-6azygwdanimation gwd-image-13kl"></gwd-image>
+          <gwd-image id="red_packet" source="red_packet.png?1615340723394" scaling="stretch" class="gwd-image-zdtf"></gwd-image>
+          <gwd-image id="icons8-coin-48_9" source="icons8-coin-48.png?1615340723394" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-gen-ldcngwdanimation"></gwd-image>
+          <gwd-image id="icons8-coin-48_12" source="icons8-coin-48.png?1615340723394" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-gen-1s8qgwdanimation gwd-image-467s"></gwd-image>
+          <gwd-image id="icons8-coin-48_14" source="icons8-coin-48.png?1615340723394" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-gen-1p2fgwdanimation gwd-image-60zi"></gwd-image>
+          <gwd-image id="icons8-coin-48_15" source="icons8-coin-48.png?1615340723394" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-image-60zi gwd-gen-1lnwgwdanimation gwd-image-4n9b"></gwd-image>
+          <gwd-image id="icons8-coin-48_16" source="icons8-coin-48.png?1615340723394" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-image-60zi gwd-image-4n9b gwd-image-mtnb gwd-gen-1irygwdanimation"></gwd-image>
+          <gwd-image id="icons8-coin-48_10" source="icons8-coin-48.png?1615340723394" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-gen-6azygwdanimation gwd-image-13kl"></gwd-image>
         </div>
       </gwd-page>
     </gwd-pagedeck>
@@ -2913,6 +2925,8 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
     <gwd-exit metric="Playstore" url="https://play.google.com/store/apps/details?id=com.shopee.my"></gwd-exit>
     <gwd-exit metric="AppStore" url="https://apps.apple.com/my/app/shopee-1-online-platform/id959841113"></gwd-exit>
     <gwd-exit metric="logo" url="https://shopee.com.my/"></gwd-exit>
+    <gwd-exit metric="how to register for an account" url="https://help.shopee.com.my/my/s/article/How-do-I-register-for-an-account"></gwd-exit>
+    <gwd-exit metric="Logo" url="https://shopee.com.my/"></gwd-exit>
   </gwd-google-ad>
   <script type="text/javascript" id="gwd-init-code">
     (function() {
@@ -2974,6 +2988,8 @@ Enabler.exit("shopee", "https://shopee.com.my/");
 Enabler.exit("Playstore", "https://play.google.com/store/apps/details?id=com.shopee.my");
 Enabler.exit("AppStore", "https://apps.apple.com/my/app/shopee-1-online-platform/id959841113");
 Enabler.exit("logo", "https://shopee.com.my/");
+Enabler.exit("how to register for an account", "https://help.shopee.com.my/my/s/article/How-do-I-register-for-an-account");
+Enabler.exit("Logo", "https://shopee.com.my/");
 Enabler.exit("gwd-transitiongallery_2: Gallery Frame Exited", "");
 Enabler.exit("gwd-transitiongallery_1: Gallery Frame Exited", "");
-}</script><script type="text/gwd-admetadata">{"version":1,"type":"GoogleAd","format":"","template":"Banner 3.0.0","politeload":false,"fullscreen":false,"counters":[{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube play"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube pause"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube end"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube replayed"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube first quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube midpoint"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube third quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube complete"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview started"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview first quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview midpoint"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview third quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview complete"},{"source":"gwd-transitiongallery_2","metric":"gwd-transitiongallery_2: frameexit"},{"source":"gwd-transitiongallery_1","metric":"gwd-transitiongallery_1: frameexit"}],"timers":[],"exits":[{"exitId":"shopee","url":"https://shopee.com.my/"},{"exitId":"Playstore","url":"https://play.google.com/store/apps/details?id=com.shopee.my"},{"exitId":"AppStore","url":"https://apps.apple.com/my/app/shopee-1-online-platform/id959841113"},{"exitId":"logo","url":"https://shopee.com.my/"},{"exitId":"gwd-transitiongallery_2: Gallery Frame Exited"},{"exitId":"gwd-transitiongallery_1: Gallery Frame Exited"}],"creativeProperties":{"minWidth":1000,"minHeight":450,"maxWidth":1000,"maxHeight":450},"components":["button","gwd-google-ad","gwd-image","gwd-image-effect","gwd-imagebutton","gwd-page","gwd-pagedeck","gwd-push","gwd-reveal","gwd-taparea","gwd-transitiongallery","gwd-youtube","text"],"responsive":false}</script><script data-exports-type="dclk-quick-preview">studio.Enabler.setRushSimulatedLocalEvents(true);</script></body></html>
+}</script><script type="text/gwd-admetadata">{"version":1,"type":"GoogleAd","format":"","template":"Banner 3.0.0","politeload":false,"fullscreen":false,"counters":[{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube play"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube pause"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube end"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube replayed"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube first quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube midpoint"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube third quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube complete"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview started"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview first quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview midpoint"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview third quartile"},{"source":"gwd-youtube_1","metric":"gwd-youtube_1: YouTube preview complete"},{"source":"gwd-transitiongallery_2","metric":"gwd-transitiongallery_2: frameexit"},{"source":"gwd-transitiongallery_1","metric":"gwd-transitiongallery_1: frameexit"}],"timers":[],"exits":[{"exitId":"shopee","url":"https://shopee.com.my/"},{"exitId":"Playstore","url":"https://play.google.com/store/apps/details?id=com.shopee.my"},{"exitId":"AppStore","url":"https://apps.apple.com/my/app/shopee-1-online-platform/id959841113"},{"exitId":"logo","url":"https://shopee.com.my/"},{"exitId":"how to register for an account","url":"https://help.shopee.com.my/my/s/article/How-do-I-register-for-an-account"},{"exitId":"Logo","url":"https://shopee.com.my/"},{"exitId":"gwd-transitiongallery_2: Gallery Frame Exited"},{"exitId":"gwd-transitiongallery_1: Gallery Frame Exited"}],"creativeProperties":{"minWidth":1000,"minHeight":450,"maxWidth":1000,"maxHeight":450},"components":["button","gwd-google-ad","gwd-image","gwd-image-effect","gwd-imagebutton","gwd-page","gwd-pagedeck","gwd-push","gwd-reveal","gwd-taparea","gwd-transitiongallery","gwd-youtube","text"],"responsive":false}</script><script data-exports-type="dclk-quick-preview">studio.Enabler.setRushSimulatedLocalEvents(true);</script></body></html>

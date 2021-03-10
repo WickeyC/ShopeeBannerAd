@@ -1277,6 +1277,14 @@
       // GWD Predefined Function
       gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_3', 'slide', 1000, 'linear', 'left');
     };
+    gwd.auto_Gwd_taparea_2Click = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdGoogleAd.exit('gwd-ad', 'how to register for an account', 'https://help.shopee.com.my/my/s/article/How-do-I-register-for-an-account', true, true, 'page1_4');
+    };
+    gwd.auto_Asset_2_1Click = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdGoogleAd.exit('gwd-ad', 'Logo', 'https://shopee.com.my/', true, true, 'page1_4');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Support code for event handling in Google Web Designer
@@ -1295,6 +1303,8 @@
       gwd.actions.events.addHandler('button_3', 'click', gwd.auto_Button_3Click, false);
       gwd.actions.events.addHandler('button_1', 'click', gwd.auto_Button_1Click, false);
       gwd.actions.events.addHandler('button_4', 'click', gwd.auto_Button_4Click, false);
+      gwd.actions.events.addHandler('gwd-taparea_2', 'click', gwd.auto_Gwd_taparea_2Click, false);
+      gwd.actions.events.addHandler('Asset_2_1', 'click', gwd.auto_Asset_2_1Click, false);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click, false);
@@ -1310,6 +1320,8 @@
       gwd.actions.events.removeHandler('button_3', 'click', gwd.auto_Button_3Click, false);
       gwd.actions.events.removeHandler('button_1', 'click', gwd.auto_Button_1Click, false);
       gwd.actions.events.removeHandler('button_4', 'click', gwd.auto_Button_4Click, false);
+      gwd.actions.events.removeHandler('gwd-taparea_2', 'click', gwd.auto_Gwd_taparea_2Click, false);
+      gwd.actions.events.removeHandler('Asset_2_1', 'click', gwd.auto_Asset_2_1Click, false);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
@@ -1515,6 +1527,8 @@
     <gwd-exit metric="Playstore" url="https://play.google.com/store/apps/details?id=com.shopee.my"></gwd-exit>
     <gwd-exit metric="AppStore" url="https://apps.apple.com/my/app/shopee-1-online-platform/id959841113"></gwd-exit>
     <gwd-exit metric="logo" url="https://shopee.com.my/"></gwd-exit>
+    <gwd-exit metric="how to register for an account" url="https://help.shopee.com.my/my/s/article/How-do-I-register-for-an-account"></gwd-exit>
+    <gwd-exit metric="Logo" url="https://shopee.com.my/"></gwd-exit>
   </gwd-google-ad>
   <script type="text/javascript" id="gwd-init-code">
     (function() {
