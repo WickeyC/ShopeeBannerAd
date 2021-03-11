@@ -429,12 +429,6 @@
       visibility: hidden;
       top: 315px;
     }
-    .gwd-imagebutton-bbei {
-      width: 222px;
-      height: 51px;
-      left: 684px;
-      top: 86px;
-    }
     .gwd-image-effect-814j {
       position: absolute;
       left: 625px;
@@ -449,6 +443,7 @@
       top: 20px;
       width: 70px;
       height: 69.06px;
+      cursor: pointer;
     }
     .header {
       position: relative;
@@ -646,6 +641,7 @@
       position: absolute;
       width: 190px;
       height: 49px;
+      cursor: pointer;
       background: linear-gradient(rgb(255, 154, 122) 0%, rgb(255, 123, 28) 100%);
       color: rgb(255, 255, 255);
       border-image-source: none;
@@ -662,6 +658,13 @@
       top: 363px;
       font-family: Inter;
       left: 405px;
+      transition: background 300ms ease 0s, color 300ms ease 0s, transform 300ms ease 0s;
+    }
+    .gwd-button-1nws:hover {
+      background: rgb(255, 255, 255);
+      color: rgb(255, 123, 28);
+      box-shadow: rgb(255, 135, 119) 0px 0px 0px 1px, rgba(31, 33, 81, 0.25) 0px 8px 15px;
+      transform: translateY(-2px) scale(1.04);
     }
     @keyframes gwd-gen-1sxkgwdanimation_gwd-keyframes {
       0% {
@@ -835,6 +838,7 @@
       width: 70px;
       height: 69.06px;
       top: 20px;
+      cursor: pointer;
     }
     .gwd-button-7a2h {
       position: absolute;
@@ -851,6 +855,18 @@
       align-items: center;
       justify-content: center;
     }
+    .gwd-button-7a2h::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: block;
+      border-radius: 28px;
+      background: rgba(255, 112, 96, 0.5);
+      width: 28px;
+      height: 28px;
+      transition: all 0.3s ease 0s;
+    }
     .gwd-button-7a2h span {
       position: relative;
       font-size: 14px;
@@ -859,6 +875,11 @@
     }
     .gwd-button-7a2h:hover {
       cursor: pointer;
+    }
+    .gwd-button-7a2h:hover::before {
+      width: 100%;
+      background: rgb(255, 92, 63);
+      box-shadow: rgb(216, 197, 208) 0px 1px 5px;
     }
     .gwd-button-7a2h:hover svg {
       transform: translateX(0px);
@@ -2724,10 +2745,6 @@
     .gwd-span-sl9q {
       left: 0px;
     }
-    .gwd-imagebutton-6aea {
-      left: 739px;
-      top: 226px;
-    }
     .gwd-span-j7j6 {
       font-size: 53px;
     }
@@ -2746,7 +2763,68 @@
     .gwd-span-1843 {
       font-style: normal;
     }
-    .gwd-imagebutton-1u6f {}
+    .gwd-button-wi8e {
+      position: absolute;
+      width: 160px;
+      height: 49px;
+      cursor: pointer;
+      background: linear-gradient(rgb(255, 154, 122) 0%, rgb(255, 123, 28) 100%);
+      color: rgb(255, 255, 255);
+      border-image-source: none;
+      border-image-width: 1;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      border-color: transparent;
+      font-size: 16px;
+      border-width: 0px;
+      border-radius: 5px;
+      font-weight: normal;
+      border-style: none;
+      box-shadow: rgb(255, 135, 119) 0px 1px 0px 1px, rgba(31, 33, 81, 0.25) 0px 8px 12px;
+      font-family: Inter;
+      transition: background 300ms ease 0s, color 300ms ease 0s, transform 300ms ease 0s;
+      left: 739px;
+      top: 226px;
+    }
+    .gwd-button-wi8e:hover {
+      background: rgb(255, 255, 255);
+      color: rgb(255, 123, 28);
+      box-shadow: rgb(255, 135, 119) 0px 0px 0px 1px, rgba(31, 33, 81, 0.25) 0px 8px 15px;
+      transform: translateY(-2px) scale(1.04);
+    }
+    .gwd-button-1lt1 {
+      position: absolute;
+      width: 160px;
+      height: 49px;
+      cursor: pointer;
+      background: linear-gradient(rgb(255, 154, 122) 0%, rgb(255, 123, 28) 100%);
+      color: rgb(255, 255, 255);
+      border-image-source: none;
+      border-image-width: 1;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      border-color: transparent;
+      font-size: 16px;
+      border-width: 0px;
+      border-radius: 5px;
+      font-weight: normal;
+      border-style: none;
+      box-shadow: rgb(255, 135, 119) 0px 1px 0px 1px, rgba(31, 33, 81, 0.25) 0px 8px 12px;
+      font-family: Inter;
+      transition: background 300ms ease 0s, color 300ms ease 0s, transform 300ms ease 0s;
+      left: 724px;
+      top: 79px;
+    }
+    .gwd-button-1lt1:hover {
+      background: rgb(255, 255, 255);
+      color: rgb(255, 123, 28);
+      box-shadow: rgb(255, 135, 119) 0px 0px 0px 1px, rgba(31, 33, 81, 0.25) 0px 8px 15px;
+      transform: translateY(-2px) scale(1.04);
+    }
+    .gwd-button-1vb9 {
+      left: 453px;
+      top: 371px;
+    }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" type="text/css">
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
@@ -2785,10 +2863,6 @@
     gwd.auto_Gwd_imagebutton_9Click = function(event) {
       // GWD Predefined Function
       gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_3', 'slide', 1000, 'ease-in-out', 'right');
-    };
-    gwd.auto_Gwd_imagebutton_8Click = function(event) {
-      // GWD Predefined Function
-      gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_5', 'slide', 1000, 'linear', 'right');
     };
     gwd.auto_Gwd_imagebutton_2Click1 = function(event) {
       // GWD Predefined Function
@@ -2842,10 +2916,6 @@
       // GWD Predefined Function
       gwd.actions.gwdGoogleAd.exit('gwd-ad', 'Shopee', 'https://shopee.com.my/', true, true, 'page1_2');
     };
-    gwd.auto_Gwd_imagebutton_11Click = function(event) {
-      // GWD Predefined Function
-      gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_2', 'slide', 1000, 'linear', 'right');
-    };
     gwd.auto_Button_7Click = function(event) {
       // GWD Predefined Function
       gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_1', 'slide', 1000, 'linear', 'left');
@@ -2858,6 +2928,18 @@
       // GWD Predefined Function
       gwd.actions.gwdGoogleAd.exit('gwd-ad', 'logo_1', 'https://shopee.com.my/', true, true, 'page1_5');
     };
+    gwd.auto_Button_9Click = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_2', 'slide', 1000, 'linear', 'right');
+    };
+    gwd.auto_Button_10Click = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_5', 'slide', 1000, 'linear', 'right');
+    };
+    gwd.auto_Button_11Click = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_5', 'slide', 1000, 'linear', 'right');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Support code for event handling in Google Web Designer
@@ -2868,7 +2950,6 @@
       gwd.actions.events.addHandler('gwd-imagebutton_4', 'click', gwd.auto_Gwd_imagebutton_4Click, false);
       gwd.actions.events.addHandler('gwd-imagebutton_5', 'click', gwd.auto_Gwd_imagebutton_5Click, false);
       gwd.actions.events.addHandler('gwd-imagebutton_9', 'click', gwd.auto_Gwd_imagebutton_9Click, false);
-      gwd.actions.events.addHandler('gwd-imagebutton_8', 'click', gwd.auto_Gwd_imagebutton_8Click, false);
       gwd.actions.events.addHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click1, false);
       gwd.actions.events.addHandler('gwd-image-effect_1', 'mouseover', gwd.auto_Gwd_image_effect_1Mouseover, false);
       gwd.actions.events.addHandler('Asset_2_3', 'click', gwd.auto_Asset_2Click, false);
@@ -2882,10 +2963,12 @@
       gwd.actions.events.addHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click, false);
       gwd.actions.events.addHandler('gwd-image-effect_1', 'mouseover', gwd.auto_Gwd_image_effect_1Click, false);
       gwd.actions.events.addHandler('shopnowbutton', 'click', gwd.auto_ShopnowbuttonClick, false);
-      gwd.actions.events.addHandler('gwd-imagebutton_11', 'click', gwd.auto_Gwd_imagebutton_11Click, false);
       gwd.actions.events.addHandler('button_7', 'click', gwd.auto_Button_7Click, false);
       gwd.actions.events.addHandler('Asset_2_2', 'click', gwd.auto_Asset_3Click, false);
       gwd.actions.events.addHandler('Asset_2_1', 'click', gwd.auto_Asset_4Click, false);
+      gwd.actions.events.addHandler('button_9', 'click', gwd.auto_Button_9Click, false);
+      gwd.actions.events.addHandler('button_10', 'click', gwd.auto_Button_10Click, false);
+      gwd.actions.events.addHandler('button_11', 'click', gwd.auto_Button_11Click, false);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click, false);
@@ -2893,7 +2976,6 @@
       gwd.actions.events.removeHandler('gwd-imagebutton_4', 'click', gwd.auto_Gwd_imagebutton_4Click, false);
       gwd.actions.events.removeHandler('gwd-imagebutton_5', 'click', gwd.auto_Gwd_imagebutton_5Click, false);
       gwd.actions.events.removeHandler('gwd-imagebutton_9', 'click', gwd.auto_Gwd_imagebutton_9Click, false);
-      gwd.actions.events.removeHandler('gwd-imagebutton_8', 'click', gwd.auto_Gwd_imagebutton_8Click, false);
       gwd.actions.events.removeHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click1, false);
       gwd.actions.events.removeHandler('gwd-image-effect_1', 'mouseover', gwd.auto_Gwd_image_effect_1Mouseover, false);
       gwd.actions.events.removeHandler('Asset_2_3', 'click', gwd.auto_Asset_2Click, false);
@@ -2907,10 +2989,12 @@
       gwd.actions.events.removeHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click, false);
       gwd.actions.events.removeHandler('gwd-image-effect_1', 'mouseover', gwd.auto_Gwd_image_effect_1Click, false);
       gwd.actions.events.removeHandler('shopnowbutton', 'click', gwd.auto_ShopnowbuttonClick, false);
-      gwd.actions.events.removeHandler('gwd-imagebutton_11', 'click', gwd.auto_Gwd_imagebutton_11Click, false);
       gwd.actions.events.removeHandler('button_7', 'click', gwd.auto_Button_7Click, false);
       gwd.actions.events.removeHandler('Asset_2_2', 'click', gwd.auto_Asset_3Click, false);
       gwd.actions.events.removeHandler('Asset_2_1', 'click', gwd.auto_Asset_4Click, false);
+      gwd.actions.events.removeHandler('button_9', 'click', gwd.auto_Button_9Click, false);
+      gwd.actions.events.removeHandler('button_10', 'click', gwd.auto_Button_10Click, false);
+      gwd.actions.events.removeHandler('button_11', 'click', gwd.auto_Button_11Click, false);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
@@ -3004,8 +3088,8 @@
             </svg>
             <span id="backbutton7">Go Back</span>
           </button>
-          <gwd-imagebutton id="gwd-imagebutton_11" down-image="assets/BrandsUp.png" scaling="cover" class="gwd-imagebutton-1mm6 gwd-imagebutton-bbei gwd-imagebutton-6aea" up-image="assets/BrandsUp.png" over-image="assets/BrandsHover.png"></gwd-imagebutton>
           <gwd-image id="Asset_2_1" source="assets/Asset 2.svg" scaling="stretch" class="gwd-image-qnlc"></gwd-image>
+          <button id="button_9" class="gwd-button-wi8e">Brands</button>
         </div>
       </gwd-page>
       <gwd-page id="page1_1" class="gwd-page-wrapper gwd-lightbox gwd-page-o17o" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Main Banner">
@@ -3026,12 +3110,13 @@
           <p class="gwd-p-m1s1">Download Our Apps</p>
           <gwd-youtube id="gwd-youtube_1" video-url="https://www.youtube.com/watch?v=kroC69fi5vw" class="gwd-youtube-1uuu" data-gwd-name="Youtube" autoplay="standard" allowfullscreen="" loop=""></gwd-youtube>
           <gwd-imagebutton id="gwd-imagebutton_2" up-image="assets/tanglungup.svg" over-image="assets/tanglunghover (1).svg" down-image="assets/tanglungup.svg" scaling="cover" class="gwd-imagebutton-zl0h gwd-gen-1vyugwdanimation" data-gwd-name="LuckyDraw"></gwd-imagebutton>
-          <gwd-imagebutton id="gwd-imagebutton_8" down-image="assets/SalesUp.png" scaling="cover" class="gwd-imagebutton-1mm6 gwd-imagebutton-bbei gwd-imagebutton-1u6f" up-image="assets/SalesUp.png" over-image="assets/SalesHover (1).png"></gwd-imagebutton>
           <gwd-image-effect id="gwd-image-effect_1" time-limit="-1" class="gwd-image-effect-814j" images="assets/istockphoto-1078387750-612x612.jpg">
             <gwd-reveal track-mouse="" autoplay="none" feathering="0" xradius="17" yradius="17" speed="5" clear-revealed=""></gwd-reveal>
           </gwd-image-effect>
           <gwd-imagebutton id="gwd-imagebutton_9" down-image="assets/DrawUp.png" scaling="cover" class="gwd-imagebutton-1mm6 gwd-imagebutton-1l89" up-image="assets/DrawUp.png" over-image="assets/DrawHover (1).png" data-gwd-name="LuckyDrawBut"></gwd-imagebutton>
           <gwd-image id="mouse" source="assets/mouse.png" scaling="stretch" class="gwd-image-114m gwd-gen-4pf6gwdanimation"></gwd-image>
+          <button id="button_10" class="gwd-button-1lt1">2.2 Sales</button>
+          <button id="button_11" class="gwd-button-1lt1 gwd-button-1vb9">Lucky Draw</button>
         </div>
       </gwd-page>
       <gwd-page id="page1_2" class="gwd-page-wrapper gwd-lightbox gwd-page-1m2b" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Promotions">
