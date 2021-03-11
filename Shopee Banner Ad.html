@@ -162,8 +162,8 @@
       height: 554px;
       top: -10px;
       left: -22px;
-      transform: rotateZ(180deg);
       transform-style: preserve-3d;
+      transform: rotateZ(180deg);
     }
     .gwd-youtube-1uuu {
       position: absolute;
@@ -414,21 +414,6 @@
     #page1_1.gwd-play-animation .gwd-gen-1gulgwdanimation {
       animation: 15s linear 0s infinite normal forwards running gwd-gen-1gulgwdanimation_gwd-keyframes;
     }
-    .gwd-imagebutton-1mm6 {
-      position: absolute;
-      width: 191px;
-      height: 44px;
-      transform-origin: 50% 50% 0px;
-      left: 700px;
-      top: 105px;
-    }
-    .gwd-imagebutton-1l89 {
-      left: 684px;
-      width: 222px;
-      height: 51px;
-      visibility: hidden;
-      top: 315px;
-    }
     .gwd-image-effect-814j {
       position: absolute;
       left: 625px;
@@ -443,6 +428,9 @@
       top: 20px;
       width: 70px;
       height: 69.06px;
+      cursor: pointer;
+    }
+    .gwd-button-zhfu:hover {
       cursor: pointer;
     }
     .header {
@@ -2662,11 +2650,11 @@
     .gwd-image-lc5s {
       position: absolute;
       transform-origin: 50% 50% 0px;
-      left: -13px;
-      top: -52px;
-      width: 1047px;
-      height: 599px;
       visibility: hidden;
+      width: 1012px;
+      height: 579px;
+      left: -6px;
+      top: -72px;
     }
     .gwd-image-114m {
       position: absolute;
@@ -2822,8 +2810,9 @@
       transform: translateY(-2px) scale(1.04);
     }
     .gwd-button-1vb9 {
-      left: 453px;
-      top: 371px;
+      top: 318px;
+      visibility: hidden;
+      left: 724px;
     }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" type="text/css">
@@ -2860,17 +2849,13 @@
       // GWD Predefined Function
       gwd.actions.gwdGoogleAd.exit('gwd-ad', 'AppStore', 'https://apps.apple.com/my/app/shopee-1-online-platform/id959841113', true, true, 'page1_1');
     };
-    gwd.auto_Gwd_imagebutton_9Click = function(event) {
-      // GWD Predefined Function
-      gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_3', 'slide', 1000, 'ease-in-out', 'right');
-    };
     gwd.auto_Gwd_imagebutton_2Click1 = function(event) {
       // GWD Predefined Function
       gwd.actions.events.setInlineStyle('moneytree_1', 'transition: all 200s ease-in; visibility: visible;');
     };
     gwd.auto_Gwd_image_effect_1Mouseover = function(event) {
       // GWD Predefined Function
-      gwd.actions.events.setInlineStyle('gwd-imagebutton_9', 'visibility: visible;');
+      gwd.actions.events.setInlineStyle('button_11', 'visibility: visible;');
     };
     gwd.auto_Asset_2Click = function(event) {
       // GWD Predefined Function
@@ -2938,7 +2923,7 @@
     };
     gwd.auto_Button_11Click = function(event) {
       // GWD Predefined Function
-      gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_5', 'slide', 1000, 'linear', 'right');
+      gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_3', 'slide', 1000, 'linear', 'right');
     };
   </script>
   <script type="text/javascript" gwd-events="registration">
@@ -2949,7 +2934,6 @@
       gwd.actions.events.addHandler('gwd-imagebutton_3', 'click', gwd.auto_Gwd_imagebutton_3Click, false);
       gwd.actions.events.addHandler('gwd-imagebutton_4', 'click', gwd.auto_Gwd_imagebutton_4Click, false);
       gwd.actions.events.addHandler('gwd-imagebutton_5', 'click', gwd.auto_Gwd_imagebutton_5Click, false);
-      gwd.actions.events.addHandler('gwd-imagebutton_9', 'click', gwd.auto_Gwd_imagebutton_9Click, false);
       gwd.actions.events.addHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click1, false);
       gwd.actions.events.addHandler('gwd-image-effect_1', 'mouseover', gwd.auto_Gwd_image_effect_1Mouseover, false);
       gwd.actions.events.addHandler('Asset_2_3', 'click', gwd.auto_Asset_2Click, false);
@@ -2975,7 +2959,6 @@
       gwd.actions.events.removeHandler('gwd-imagebutton_3', 'click', gwd.auto_Gwd_imagebutton_3Click, false);
       gwd.actions.events.removeHandler('gwd-imagebutton_4', 'click', gwd.auto_Gwd_imagebutton_4Click, false);
       gwd.actions.events.removeHandler('gwd-imagebutton_5', 'click', gwd.auto_Gwd_imagebutton_5Click, false);
-      gwd.actions.events.removeHandler('gwd-imagebutton_9', 'click', gwd.auto_Gwd_imagebutton_9Click, false);
       gwd.actions.events.removeHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click1, false);
       gwd.actions.events.removeHandler('gwd-image-effect_1', 'mouseover', gwd.auto_Gwd_image_effect_1Mouseover, false);
       gwd.actions.events.removeHandler('Asset_2_3', 'click', gwd.auto_Asset_2Click, false);
@@ -3113,17 +3096,16 @@
           <gwd-image-effect id="gwd-image-effect_1" time-limit="-1" class="gwd-image-effect-814j" images="assets/istockphoto-1078387750-612x612.jpg">
             <gwd-reveal track-mouse="" autoplay="none" feathering="0" xradius="17" yradius="17" speed="5" clear-revealed=""></gwd-reveal>
           </gwd-image-effect>
-          <gwd-imagebutton id="gwd-imagebutton_9" down-image="assets/DrawUp.png" scaling="cover" class="gwd-imagebutton-1mm6 gwd-imagebutton-1l89" up-image="assets/DrawUp.png" over-image="assets/DrawHover (1).png" data-gwd-name="LuckyDrawBut"></gwd-imagebutton>
+          <button id="button_11" class="gwd-button-1lt1 gwd-button-1vb9">Lucky Draw</button>
           <gwd-image id="mouse" source="assets/mouse.png" scaling="stretch" class="gwd-image-114m gwd-gen-4pf6gwdanimation"></gwd-image>
           <button id="button_10" class="gwd-button-1lt1">2.2 Sales</button>
-          <button id="button_11" class="gwd-button-1lt1 gwd-button-1vb9">Lucky Draw</button>
         </div>
       </gwd-page>
       <gwd-page id="page1_2" class="gwd-page-wrapper gwd-lightbox gwd-page-1m2b" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Promotions">
         <div class="gwd-page-content gwd-div-1i6o">
           <div class="gradient-bg" data-gwd-tl-locked=""></div>
           <gwd-image id="Asset_1_1" source="assets/Asset 1 1.png" scaling="stretch" class="gwd-image-jthm" data-gwd-tl-locked=""></gwd-image>
-          <p class="gwd-p-1quf gwd-gen-kzfugwdanimation"><span class="gwd-span-xcph">Million Dollar</span>&nbsp;<span class="gwd-span-10ml">BRANDS</span> <span class="gwd-span-1843">Discounts</span></p>
+          <p class="gwd-p-1quf gwd-gen-kzfugwdanimation"><span class="gwd-span-xcph">Million Dollar</span>&nbsp;<span class="gwd-span-10ml">BRANDS</span>&nbsp;&nbsp;<span class="gwd-span-1843">Discounts</span></p>
           <p class="gwd-p-pw0l gwd-gen-1uaagwdanimation"><span class="gwd-span-rchl">Lowest Price Only Available in</span> <span class="gwd-span-1dlz">SHOPEE</span></p>
           <span class="gwd-span-ue56 gwd-gen-107qgwdanimation" data-gwd-motion-path-key="gwd-motion-path-hycb" data-gwd-tl-locked="">2.2 SALE</span>
           <gwd-image id="red_packet_1" source="assets/red_packet.png" scaling="stretch" class="gwd-image-yh46 gwd-gen-1bejgwdanimation" data-gwd-tl-locked=""></gwd-image>
