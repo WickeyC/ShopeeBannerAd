@@ -2929,6 +2929,26 @@
       // GWD Predefined Function
       gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_3', 'slide', 1000, 'linear', 'right');
     };
+    gwd.auto_Gwd_imagebutton_1Click1 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.timeline.pause('page1');
+    };
+    gwd.auto_Button_10Click1 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('moneytree_1', 'visibility: hidden;');
+    };
+    gwd.auto_Button_11Click1 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('moneytree_1', 'visibility: hidden;');
+    };
+    gwd.auto_Button_11Click2 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('bg', 'visibility: hidden;');
+    };
+    gwd.auto_Button_10Click2 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('bg', 'visibility: hidden;');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Support code for event handling in Google Web Designer
@@ -2957,6 +2977,12 @@
       gwd.actions.events.addHandler('button_9', 'click', gwd.auto_Button_9Click, false);
       gwd.actions.events.addHandler('button_10', 'click', gwd.auto_Button_10Click, false);
       gwd.actions.events.addHandler('button_11', 'click', gwd.auto_Button_11Click, false);
+      gwd.actions.events.addHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click1, false);
+      gwd.actions.events.addHandler('button_10', 'click', gwd.auto_Button_10Click1, false);
+      gwd.actions.events.addHandler('button_11', 'click', gwd.auto_Button_11Click1, false);
+      gwd.actions.events.addHandler('button_11', 'click', gwd.auto_Button_11Click2, false);
+      gwd.actions.events.addHandler('button_10', 'click', gwd.auto_Button_10Click2, false);
+      gwd.actions.timeline.captureAnimationEnd(document.body);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click, false);
@@ -2982,6 +3008,12 @@
       gwd.actions.events.removeHandler('button_9', 'click', gwd.auto_Button_9Click, false);
       gwd.actions.events.removeHandler('button_10', 'click', gwd.auto_Button_10Click, false);
       gwd.actions.events.removeHandler('button_11', 'click', gwd.auto_Button_11Click, false);
+      gwd.actions.events.removeHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click1, false);
+      gwd.actions.events.removeHandler('button_10', 'click', gwd.auto_Button_10Click1, false);
+      gwd.actions.events.removeHandler('button_11', 'click', gwd.auto_Button_11Click1, false);
+      gwd.actions.events.removeHandler('button_11', 'click', gwd.auto_Button_11Click2, false);
+      gwd.actions.events.removeHandler('button_10', 'click', gwd.auto_Button_10Click2, false);
+      gwd.actions.timeline.releaseAnimationEnd(document.body);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
@@ -3081,7 +3113,7 @@
       </gwd-page>
       <gwd-page id="page1_1" class="gwd-page-wrapper gwd-lightbox gwd-page-o17o" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Main Banner">
         <div class="gwd-page-content gwd-div-5btw">
-          <gwd-image id="pexels-rodnae-productions-6692117_1" source="assets/pexels-rodnae-productions-6692117.jpg" scaling="stretch" class="gwd-image-1rj3 gwd-image-b657"></gwd-image>
+          <gwd-image id="pexels-rodnae-productions-6692117_1" source="assets/pexels-rodnae-productions-6692117.jpg" scaling="stretch" class="gwd-image-1rj3 gwd-image-b657" data-gwd-name="bg down"></gwd-image>
           <gwd-image id="bg" source="assets/bg.jpg" scaling="stretch" class="gwd-image-lc5s"></gwd-image>
           <gwd-image id="moneytree_1" source="assets/moneytree.png" scaling="stretch" class="gwd-image-trrk gwd-image-ighx gwd-gen-1gulgwdanimation"></gwd-image>
           <gwd-image id="Rectangle_1" source="assets/Rectangle 1.png" scaling="stretch" class="gwd-image-1eog"></gwd-image>
@@ -3096,13 +3128,13 @@
           </gwd-transitiongallery>
           <p class="gwd-p-m1s1">Download Our Apps</p>
           <gwd-youtube id="gwd-youtube_1" video-url="https://www.youtube.com/watch?v=kroC69fi5vw" class="gwd-youtube-1uuu" data-gwd-name="Youtube" autoplay="standard" allowfullscreen="" loop=""></gwd-youtube>
-          <gwd-imagebutton id="gwd-imagebutton_2" up-image="assets/tanglungup.svg" over-image="assets/tanglunghover (1).svg" down-image="assets/tanglungup.svg" scaling="cover" class="gwd-imagebutton-zl0h gwd-gen-1vyugwdanimation" data-gwd-name="LuckyDraw"></gwd-imagebutton>
-          <gwd-image-effect id="gwd-image-effect_1" time-limit="-1" class="gwd-image-effect-814j" images="assets/istockphoto-1078387750-612x612.jpg">
+          <gwd-imagebutton id="gwd-imagebutton_2" up-image="assets/tanglungup.svg" over-image="assets/tanglunghover (1).svg" down-image="assets/tanglungup.svg" scaling="cover" class="gwd-imagebutton-zl0h gwd-gen-1vyugwdanimation" data-gwd-name="Lantern"></gwd-imagebutton>
+          <gwd-image-effect id="gwd-image-effect_1" time-limit="-1" class="gwd-image-effect-814j" images="assets/istockphoto-1078387750-612x612.jpg" data-gwd-name="Reveal">
             <gwd-reveal track-mouse="" autoplay="none" feathering="0" xradius="17" yradius="17" speed="5" clear-revealed=""></gwd-reveal>
           </gwd-image-effect>
           <button id="button_11" class="gwd-button-1lt1 gwd-button-1vb9">Lucky Draw</button>
-          <gwd-image id="mouse" source="assets/mouse.png" scaling="stretch" class="gwd-image-114m gwd-gen-4pf6gwdanimation"></gwd-image>
           <button id="button_10" class="gwd-button-1lt1">2.2 Sales</button>
+          <gwd-image id="mouse" source="assets/mouse.png" scaling="stretch" class="gwd-image-114m gwd-gen-4pf6gwdanimation"></gwd-image>
         </div>
       </gwd-page>
       <gwd-page id="page1_2" class="gwd-page-wrapper gwd-lightbox gwd-page-1m2b" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Brands">

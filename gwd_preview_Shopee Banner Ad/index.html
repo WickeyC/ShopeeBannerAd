@@ -4468,6 +4468,14 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
         -webkit-animation-timing-function: linear;
         -moz-animation-timing-function: linear;
     }
+    68.7243% {
+        transform: translate3d(-67px, 258px, 0px) rotateZ(0.262249deg) scale3d(1.1111, 1.1111, 1.1111);
+        -webkit-transform: translate3d(-67px, 258px, 0px) rotateZ(0.262249deg) scale3d(1.1111, 1.1111, 1.1111);
+        -moz-transform: translate3d(-67px, 258px, 0px) rotateZ(0.262249deg) scale3d(1.1111, 1.1111, 1.1111);
+        animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+    }
     69.1358% {
         opacity: 1;
         transform: translate3d(-67px, 258px, 0px) rotateZ(0.262249deg) scale3d(1, 1, 1);
@@ -4585,6 +4593,10 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
         background: -webkit-linear-gradient(left, rgb(255, 154, 122) 0%, rgb(255, 123, 28) 98%);
         -webkit-animation-timing-function: linear;
     }
+    68.7243% {
+        -webkit-transform: translate3d(-67px, 258px, 0px) rotateZ(0.262249deg) scale3d(1.1111, 1.1111, 1.1111);
+        -webkit-animation-timing-function: linear;
+    }
     69.1358% {
         opacity: 1;
         -webkit-transform: translate3d(-67px, 258px, 0px) rotateZ(0.262249deg) scale3d(1, 1, 1);
@@ -4656,6 +4668,10 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
         background-color: transparent;
         color: rgb(121, 36, 26);
         background: -moz-linear-gradient(left, rgb(255, 154, 122) 0%, rgb(255, 123, 28) 98%);
+        -moz-animation-timing-function: linear;
+    }
+    68.7243% {
+        -moz-transform: translate3d(-67px, 258px, 0px) rotateZ(0.262249deg) scale3d(1.1111, 1.1111, 1.1111);
         -moz-animation-timing-function: linear;
     }
     69.1358% {
@@ -6699,6 +6715,10 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     pointer-events: none;
+}</style><style type="text/css" data-gwd-secondary-animations="">#page1.gwd-pause-animation .gwd-gen-go6pgwdanimation {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
 }</style>
   <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" type="text/css">
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
@@ -6810,6 +6830,26 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
       // GWD Predefined Function
       gwd.actions.gwdGoogleAd.goToPage('gwd-ad', 'page1_3', 'slide', 1000, 'linear', 'right');
     };
+    gwd.auto_Gwd_imagebutton_1Click1 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.timeline.pause('page1');
+    };
+    gwd.auto_Button_10Click1 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('moneytree_1', 'visibility: hidden;');
+    };
+    gwd.auto_Button_11Click1 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('moneytree_1', 'visibility: hidden;');
+    };
+    gwd.auto_Button_11Click2 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('bg', 'visibility: hidden;');
+    };
+    gwd.auto_Button_10Click2 = function(event) {
+      // GWD Predefined Function
+      gwd.actions.events.setInlineStyle('bg', 'visibility: hidden;');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Support code for event handling in Google Web Designer
@@ -6838,6 +6878,12 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
       gwd.actions.events.addHandler('button_9', 'click', gwd.auto_Button_9Click, false);
       gwd.actions.events.addHandler('button_10', 'click', gwd.auto_Button_10Click, false);
       gwd.actions.events.addHandler('button_11', 'click', gwd.auto_Button_11Click, false);
+      gwd.actions.events.addHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click1, false);
+      gwd.actions.events.addHandler('button_10', 'click', gwd.auto_Button_10Click1, false);
+      gwd.actions.events.addHandler('button_11', 'click', gwd.auto_Button_11Click1, false);
+      gwd.actions.events.addHandler('button_11', 'click', gwd.auto_Button_11Click2, false);
+      gwd.actions.events.addHandler('button_10', 'click', gwd.auto_Button_10Click2, false);
+      gwd.actions.timeline.captureAnimationEnd(document.body);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
       gwd.actions.events.removeHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click, false);
@@ -6863,6 +6909,12 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
       gwd.actions.events.removeHandler('button_9', 'click', gwd.auto_Button_9Click, false);
       gwd.actions.events.removeHandler('button_10', 'click', gwd.auto_Button_10Click, false);
       gwd.actions.events.removeHandler('button_11', 'click', gwd.auto_Button_11Click, false);
+      gwd.actions.events.removeHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click1, false);
+      gwd.actions.events.removeHandler('button_10', 'click', gwd.auto_Button_10Click1, false);
+      gwd.actions.events.removeHandler('button_11', 'click', gwd.auto_Button_11Click1, false);
+      gwd.actions.events.removeHandler('button_11', 'click', gwd.auto_Button_11Click2, false);
+      gwd.actions.events.removeHandler('button_10', 'click', gwd.auto_Button_10Click2, false);
+      gwd.actions.timeline.releaseAnimationEnd(document.body);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
     document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
@@ -6908,38 +6960,38 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
     <gwd-pagedeck class="gwd-page-container" id="pagedeck" default-page="page1">
       <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Angpao">
         <div class="gwd-page-content gwd-page-size">
-          <gwd-image id="pexels-rodnae-productions-6692117" source="pexels-rodnae-productions-6692117.jpg?1615474546087" scaling="stretch" class="gwd-image-1rj3"></gwd-image>
-          <gwd-image id="Rectangle_1_1" source="Rectangle_1.png?1615474546087" scaling="stretch" class="gwd-image-1e66"></gwd-image>
+          <gwd-image id="pexels-rodnae-productions-6692117" source="pexels-rodnae-productions-6692117.jpg?1615515071521" scaling="stretch" class="gwd-image-1rj3"></gwd-image>
+          <gwd-image id="Rectangle_1_1" source="Rectangle_1.png?1615515071521" scaling="stretch" class="gwd-image-1e66"></gwd-image>
           <gwd-imagebutton id="gwd-imagebutton_1" up-image="Angpao__1_.png" over-image="AngpaoHover__3_.png" down-image="AngpaoOnClick__3_.png" scaling="auto" class="gwd-imagebutton-1frw gwd-gen-go6pgwdanimation" data-gwd-name="Angpao" alignment="bottom"></gwd-imagebutton>
         </div>
       </gwd-page>
       <gwd-page id="page1_5" class="gwd-page-wrapper gwd-lightbox gwd-page-nzn5" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Promotion Day">
         <div class="gwd-page-content gwd-div-11jq">
-          <gwd-image id="gwd-image_30" source="pngwing.com.png?1615474546087" scaling="stretch" class="gwd-image-dqls"></gwd-image><span class="gwd-span-1lmd gwd-gen-jb6mgwdanimation">18th JAN - 13rd FEB</span><span class="gwd-span-1yh9 gwd-gen-1p8qgwdanimation" id="18TH-13RDFEBRUARYDIFFERENTITEMSDISCOUNTFOR25EVERYDAY">DIFFERENT ITEMS DISCOUNT FOR 25% EVERYDAY</span>
-          <gwd-image id="ClipartKey_602828" source="ClipartKey_602828.png?1615474546087" scaling="stretch" class="gwd-image-gcdo gwd-gen-1kqlgwdanimation"></gwd-image>
+          <gwd-image id="gwd-image_30" source="pngwing.com.png?1615515071521" scaling="stretch" class="gwd-image-dqls"></gwd-image><span class="gwd-span-1lmd gwd-gen-jb6mgwdanimation">18th JAN - 13rd FEB</span><span class="gwd-span-1yh9 gwd-gen-1p8qgwdanimation" id="18TH-13RDFEBRUARYDIFFERENTITEMSDISCOUNTFOR25EVERYDAY">DIFFERENT ITEMS DISCOUNT FOR 25% EVERYDAY</span>
+          <gwd-image id="ClipartKey_602828" source="ClipartKey_602828.png?1615515071521" scaling="stretch" class="gwd-image-gcdo gwd-gen-1kqlgwdanimation"></gwd-image>
           <div class="gwd-div-oqyx"><span class="gwd-span-90cg gwd-span-140s gwd-span-sl9q">REMIND ME</span><span class="gwd-span-hk1r">CLICK HERE TO ADD REMINDER</span></div>
           <gwd-addtocalendar id="gwd-addtocalendar_1" event-title="SHOPEE 2.2 CNY SALES" start-date="1/18/2021" icalendar="" google="" windows-live="" yahoo="" class="gwd-addtocalendar-kwv8" start-time="00:00" end-date="2/13/2021" end-time="00:00"></gwd-addtocalendar>
-          <gwd-image id="9e1bc91b5ba898135de3df57d8b692c4-1" source="9e1bc91b5ba898135de3df57d8b692c4-1.png?1615474546087" scaling="stretch" class="gwd-image-16ow gwd-image-1n0j gwd-gen-1wk1gwdanimation"></gwd-image>
-          <gwd-image id="9e1bc91b5ba898135de3df57d8b692c4-1_1" source="9e1bc91b5ba898135de3df57d8b692c4-1.png?1615474546087" scaling="stretch" class="gwd-image-16ow gwd-image-13fg gwd-gen-glxxgwdanimation"></gwd-image>
+          <gwd-image id="9e1bc91b5ba898135de3df57d8b692c4-1" source="9e1bc91b5ba898135de3df57d8b692c4-1.png?1615515071521" scaling="stretch" class="gwd-image-16ow gwd-image-1n0j gwd-gen-1wk1gwdanimation"></gwd-image>
+          <gwd-image id="9e1bc91b5ba898135de3df57d8b692c4-1_1" source="9e1bc91b5ba898135de3df57d8b692c4-1.png?1615515071521" scaling="stretch" class="gwd-image-16ow gwd-image-13fg gwd-gen-glxxgwdanimation"></gwd-image>
           <gwd-swipegallery id="gwd-swipegallery_1" scaling="contain" pause-front-media="" resume-next-media="" class="gwd-swipegallery-1e1r" navigation-highlight="rgba(224,134,38,1)" has-navigation="" groups="DAY1,DAY2,DAY3,DAY4,DAY5,DAY6,DAY7">
             <div data-gwd-group="DAY1" id="DAY1_1" style="height: 100%; width: 100%;"><span class="gwd-span-11bt gwd-grp-1gb2">DAY 1</span>
-      <gwd-image source="cc319b4547e098a09d17494258223d66-1.png?1615474546087" scaling="contain" data-gwd-grp-id="cc319b4547e098a09d17494258223d66-1" class="gwd-image-1val gwd-grp-1gb2"></gwd-image><span class="gwd-span-182c gwd-grp-1gb2">CNY HAMPER</span></div>
+      <gwd-image source="cc319b4547e098a09d17494258223d66-1.png?1615515071521" scaling="contain" data-gwd-grp-id="cc319b4547e098a09d17494258223d66-1" class="gwd-image-1val gwd-grp-1gb2"></gwd-image><span class="gwd-span-182c gwd-grp-1gb2">CNY HAMPER</span></div>
             <div data-gwd-group="DAY2" id="DAY2_1" style="height: 100%; width: 100%;"><span class="gwd-span-rs92 gwd-grp-1vyc">DAY2</span>
-      <gwd-image source="Dyson_Supersonic_HD03_Hair_Dryer_-_Iron-1.png?1615474546087" scaling="contain" class="gwd-image-jp56 gwd-grp-1vyc" data-gwd-grp-id="Dyson_Supersonic_HD03_Hair_Dryer_-_Iron-1"></gwd-image><span class="gwd-span-jhk5 gwd-grp-1vyc">DYSON&nbsp; Supersonic Hair Dryer</span></div>
+      <gwd-image source="Dyson_Supersonic_HD03_Hair_Dryer_-_Iron-1.png?1615515071521" scaling="contain" class="gwd-image-jp56 gwd-grp-1vyc" data-gwd-grp-id="Dyson_Supersonic_HD03_Hair_Dryer_-_Iron-1"></gwd-image><span class="gwd-span-jhk5 gwd-grp-1vyc">DYSON&nbsp; Supersonic Hair Dryer</span></div>
             <div data-gwd-group="DAY3" id="DAY3_1" style="height: 100%; width: 100%;"><span class="gwd-span-1gdz gwd-span-jyg4 gwd-grp-lbi6">DAY 3</span><span class="gwd-span-qpb6 gwd-span-1msf gwd-grp-lbi6">NINTENDO SWITCH</span>
-      <gwd-image source="2132-1.png?1615474546087" scaling="contain" data-gwd-grp-id="2132-1" class="gwd-image-14xp gwd-grp-lbi6"></gwd-image>
+      <gwd-image source="2132-1.png?1615515071521" scaling="contain" data-gwd-grp-id="2132-1" class="gwd-image-14xp gwd-grp-lbi6"></gwd-image>
     </div>
             <div data-gwd-group="DAY4" id="DAY4_1" style="height: 100%; width: 100%;"><span class="gwd-span-1gdz gwd-span-1p6d gwd-grp-1puc">DAY 4</span><span class="gwd-span-qpb6 gwd-span-1ne5 gwd-grp-1puc">SONY WH-1000XM3</span>
-      <gwd-image source="WH-1000XM4-1.png?1615474546087" scaling="contain" data-gwd-grp-id="WH-1000XM4-1" class="gwd-image-w0f5 gwd-grp-1puc"></gwd-image>
+      <gwd-image source="WH-1000XM4-1.png?1615515071521" scaling="contain" data-gwd-grp-id="WH-1000XM4-1" class="gwd-image-w0f5 gwd-grp-1puc"></gwd-image>
     </div>
             <div data-gwd-group="DAY5" id="DAY5_1" style="height: 100%; width: 100%;"><span class="gwd-span-1gdz gwd-span-1ha7 gwd-grp-1qiy">DAY 5</span><span class="gwd-span-qpb6 gwd-span-14wn gwd-grp-1qiy">GINTELL DeSpace UFO-X</span>
-      <gwd-image source="GINTELL-DeSpace-UFO-X-Massage-Chair-1.png?1615474546087" scaling="contain" data-gwd-grp-id="GINTELL-DeSpace-UFO-X-Massage-Chair-1" class="gwd-image-1i2k gwd-grp-1qiy"></gwd-image>
+      <gwd-image source="GINTELL-DeSpace-UFO-X-Massage-Chair-1.png?1615515071521" scaling="contain" data-gwd-grp-id="GINTELL-DeSpace-UFO-X-Massage-Chair-1" class="gwd-image-1i2k gwd-grp-1qiy"></gwd-image>
     </div>
             <div data-gwd-group="DAY6" id="DAY6_1" style="height: 100%; width: 100%;"><span class="gwd-span-1gdz gwd-span-1x5x gwd-grp-6a71">DAY 6</span><span class="gwd-span-qpb6 gwd-span-wtbj gwd-grp-6a71">SAMSUNG 55" Q80T 4K TV</span>
-      <gwd-image source="my-qled-tv-q80t-qa85q80takxxm-silver-248596198__1_.jpeg?1615474546087" scaling="contain" data-gwd-grp-id="gwd-image_25" class="gwd-image-slrk gwd-grp-6a71"></gwd-image>
+      <gwd-image source="my-qled-tv-q80t-qa85q80takxxm-silver-248596198__1_.jpeg?1615515071521" scaling="contain" data-gwd-grp-id="gwd-image_25" class="gwd-image-slrk gwd-grp-6a71"></gwd-image>
     </div>
             <div data-gwd-group="DAY7" id="DAY7_1" style="height: 100%; width: 100%;"><span class="gwd-span-1gdz gwd-span-1j00 gwd-grp-bbu0">DAY 7</span><span class="gwd-span-lsmr gwd-grp-bbu0">MYSTERY PROMOTION&nbsp; UP TO 88% DISCOUNT</span>
-      <gwd-image source="me-no-study-me-no-care-me-go-marry-a-millionaire-if-he-die-me-no-cry-me-go-marry-another-guy-1.png?1615474546087" scaling="contain" data-gwd-grp-id="me-no-study-me-no-care-me-go-marry-a-millionaire-if-he-die-me-no-cry-me-go-marry-another-guy-1" class="gwd-image-g85k gwd-grp-bbu0"></gwd-image>
+      <gwd-image source="me-no-study-me-no-care-me-go-marry-a-millionaire-if-he-die-me-no-cry-me-go-marry-another-guy-1.png?1615515071521" scaling="contain" data-gwd-grp-id="me-no-study-me-no-care-me-go-marry-a-millionaire-if-he-die-me-no-cry-me-go-marry-another-guy-1" class="gwd-image-g85k gwd-grp-bbu0"></gwd-image>
     </div>
           </gwd-swipegallery>
           <button id="button_7" class="gwd-button-7a2h gwd-button-wuu5">
@@ -6948,16 +7000,16 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
             </svg>
             <span id="backbutton7">Go Back</span>
           </button>
-          <gwd-image id="Asset_2_1" source="Asset_2.svg?1615474546087" scaling="stretch" class="gwd-image-qnlc"></gwd-image>
+          <gwd-image id="Asset_2_1" source="Asset_2.svg?1615515071521" scaling="stretch" class="gwd-image-qnlc"></gwd-image>
           <button id="button_9" class="gwd-button-wi8e">Brands</button>
         </div>
       </gwd-page>
       <gwd-page id="page1_1" class="gwd-page-wrapper gwd-lightbox gwd-page-o17o" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Main Banner">
         <div class="gwd-page-content gwd-div-5btw">
-          <gwd-image id="pexels-rodnae-productions-6692117_1" source="pexels-rodnae-productions-6692117.jpg?1615474546087" scaling="stretch" class="gwd-image-1rj3 gwd-image-b657"></gwd-image>
-          <gwd-image id="bg" source="bg.jpg?1615474546087" scaling="stretch" class="gwd-image-lc5s"></gwd-image>
-          <gwd-image id="moneytree_1" source="moneytree.png?1615474546087" scaling="stretch" class="gwd-image-trrk gwd-image-ighx gwd-gen-1gulgwdanimation"></gwd-image>
-          <gwd-image id="Rectangle_1" source="Rectangle_1.png?1615474546087" scaling="stretch" class="gwd-image-1eog"></gwd-image>
+          <gwd-image id="pexels-rodnae-productions-6692117_1" source="pexels-rodnae-productions-6692117.jpg?1615515071521" scaling="stretch" class="gwd-image-1rj3 gwd-image-b657" data-gwd-name="bg down"></gwd-image>
+          <gwd-image id="bg" source="bg.jpg?1615515071521" scaling="stretch" class="gwd-image-lc5s"></gwd-image>
+          <gwd-image id="moneytree_1" source="moneytree.png?1615515071521" scaling="stretch" class="gwd-image-trrk gwd-image-ighx gwd-gen-1gulgwdanimation"></gwd-image>
+          <gwd-image id="Rectangle_1" source="Rectangle_1.png?1615515071521" scaling="stretch" class="gwd-image-1eog"></gwd-image>
           <gwd-imagebutton id="gwd-imagebutton_5" up-image="image_3__1_.png" over-image="" down-image="image_3__1_.png" scaling="cover" class="gwd-imagebutton-17i9" data-gwd-name="PlayStore"></gwd-imagebutton>
           <gwd-transitiongallery id="gwd-transitiongallery_1" class="gwd-transitiongallery-762z gwd-transitiongallery-1yae" easing="ease-in-out" transition-duration="1.5" scaling="cover" autoplay="" autoplay-frame-interval="4" autoplay-loop-count="0" enable-interactive-transition="" data-gwd-name="Promotions" navigation-highlight="rgba(224,156,38,1)" exit-urls="" gesture="none" images="draw1.png,draw2.png,draw3.png">
             <gwd-push direction="righttoleft"></gwd-push>
@@ -6969,47 +7021,47 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
           </gwd-transitiongallery>
           <p class="gwd-p-m1s1">Download Our Apps</p>
           <gwd-youtube id="gwd-youtube_1" video-url="https://www.youtube.com/watch?v=kroC69fi5vw" class="gwd-youtube-1uuu" data-gwd-name="Youtube" autoplay="standard" allowfullscreen="" loop=""></gwd-youtube>
-          <gwd-imagebutton id="gwd-imagebutton_2" up-image="tanglungup.svg" over-image="tanglunghover__1_.svg" down-image="tanglungup.svg" scaling="cover" class="gwd-imagebutton-zl0h gwd-gen-1vyugwdanimation" data-gwd-name="LuckyDraw"></gwd-imagebutton>
-          <gwd-image-effect id="gwd-image-effect_1" time-limit="-1" class="gwd-image-effect-814j" images="istockphoto-1078387750-612x612.jpg">
+          <gwd-imagebutton id="gwd-imagebutton_2" up-image="tanglungup.svg" over-image="tanglunghover__1_.svg" down-image="tanglungup.svg" scaling="cover" class="gwd-imagebutton-zl0h gwd-gen-1vyugwdanimation" data-gwd-name="Lantern"></gwd-imagebutton>
+          <gwd-image-effect id="gwd-image-effect_1" time-limit="-1" class="gwd-image-effect-814j" images="istockphoto-1078387750-612x612.jpg" data-gwd-name="Reveal">
             <gwd-reveal track-mouse="" autoplay="none" feathering="0" xradius="17" yradius="17" speed="5" clear-revealed=""></gwd-reveal>
           </gwd-image-effect>
           <button id="button_11" class="gwd-button-1lt1 gwd-button-1vb9">Lucky Draw</button>
-          <gwd-image id="mouse" source="mouse.png?1615474546087" scaling="stretch" class="gwd-image-114m gwd-gen-4pf6gwdanimation"></gwd-image>
           <button id="button_10" class="gwd-button-1lt1">2.2 Sales</button>
+          <gwd-image id="mouse" source="mouse.png?1615515071521" scaling="stretch" class="gwd-image-114m gwd-gen-4pf6gwdanimation"></gwd-image>
         </div>
       </gwd-page>
-      <gwd-page id="page1_2" class="gwd-page-wrapper gwd-lightbox gwd-page-1m2b" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Promotions">
+      <gwd-page id="page1_2" class="gwd-page-wrapper gwd-lightbox gwd-page-1m2b" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Brands">
         <div class="gwd-page-content gwd-div-1i6o">
           <div class="gradient-bg"></div>
-          <gwd-image id="Asset_1_1" source="Asset_1_1.png?1615474546087" scaling="stretch" class="gwd-image-jthm"></gwd-image>
+          <gwd-image id="Asset_1_1" source="Asset_1_1.png?1615515071521" scaling="stretch" class="gwd-image-jthm"></gwd-image>
           <p class="gwd-p-1quf gwd-gen-kzfugwdanimation"><span class="gwd-span-xcph">Million Dollar</span>&nbsp;<span class="gwd-span-10ml">BRANDS</span>&nbsp;&nbsp;<span class="gwd-span-1843">Discounts</span></p>
           <p class="gwd-p-pw0l gwd-gen-1uaagwdanimation"><span class="gwd-span-rchl">Lowest Price Only Available in</span> <span class="gwd-span-1dlz">SHOPEE</span></p>
           <div data-gwd-motion-path-node="x" class="gwd-motion-path-hycb-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-hycb-anim-y"><span class="gwd-span-ue56 gwd-gen-107qgwdanimation">2.2 SALE</span></div></div>
-          <gwd-image id="red_packet_1" source="red_packet.png?1615474546087" scaling="stretch" class="gwd-image-yh46 gwd-gen-1bejgwdanimation"></gwd-image>
-          <gwd-image id="red_packet_2" source="red_packet.png?1615474546087" scaling="stretch" class="gwd-image-1b1b gwd-gen-p3t6gwdanimation"></gwd-image>
-          <gwd-image id="red_packet_3" source="red_packet.png?1615474546087" scaling="stretch" class="gwd-image-1u72 gwd-gen-5uy0gwdanimation"></gwd-image>
-          <gwd-image id="red_packet_4" source="red_packet.png?1615474546087" scaling="stretch" class="gwd-image-1130 gwd-gen-e75mgwdanimation"></gwd-image>
-          <gwd-image id="Dyson-Logo" source="Dyson-Logo.png?1615474546087" scaling="stretch" class="gwd-image-1dta gwd-gen-1yf5gwdanimation"></gwd-image>
-          <gwd-image id="nestle-logo-black-and-white" source="nestle-logo-black-and-white.png?1615474546087" scaling="stretch" class="gwd-image-4kim gwd-gen-184ngwdanimation"></gwd-image>
-          <gwd-image id="sony-logo-png-transparent" source="sony-logo-png-transparent.png?1615474546087" scaling="stretch" class="gwd-image-uv7k gwd-gen-18pqgwdanimation"></gwd-image>
-          <gwd-image id="Philips-Logo" source="Philips-Logo.png?1615474546087" scaling="stretch" class="gwd-image-1epo gwd-gen-g4wcgwdanimation"></gwd-image>
-          <gwd-image id="gwd-image_5" source="1200px-Huawei_Standard_logo.svg.png?1615474546087" scaling="stretch" class="gwd-image-yqjf gwd-gen-1mq3gwdanimation"></gwd-image>
-          <gwd-image id="Tefal_logo_logotype" source="Tefal_logo_logotype.png?1615474546087" scaling="stretch" class="gwd-image-101k gwd-gen-1w6vgwdanimation"></gwd-image>
-          <gwd-image id="gwd-image_6" source="Panasonic_logo__Blue_.svg.png?1615474546087" scaling="stretch" class="gwd-image-1quj gwd-gen-17oygwdanimation"></gwd-image>
-          <gwd-image id="samsung-logo" source="samsung-logo.png?1615474546087" scaling="stretch" class="gwd-image-j5u0 gwd-gen-1o08gwdanimation"></gwd-image>
-          <gwd-image id="ml-2k9hadal-logo-2" source="ml-2k9hadal-logo-2.jpg?1615474546087" scaling="stretch" class="gwd-image-8n76 gwd-gen-19dygwdanimation"></gwd-image>
-          <gwd-image id="eb1eacd6c4c846b53c9b2fc508bc0fab" source="eb1eacd6c4c846b53c9b2fc508bc0fab.png?1615474546087" scaling="stretch" class="gwd-image-fs7v gwd-gen-1lo2gwdanimation"></gwd-image>
-          <button id="shopnowbutton" class="gwd-button-zhfu gwd-gen-2bncgwdanimation">2.2 Sale</button>
-          <gwd-image id="mouse_click" source="mouse_click.png?1615474546087" scaling="stretch" class="gwd-image-ppb6 gwd-gen-niwkgwdanimation"></gwd-image>
-          <gwd-image id="moomooo" source="2.2moomoo.jpg?1615474546087" scaling="stretch" class="gwd-image-1gac gwd-image-by8e gwd-gen-a2udgwdanimation"></gwd-image>
-          <gwd-image id="gwd-image_20" source="2.2moomoo.jpg?1615474546087" scaling="stretch" class="gwd-image-1gac gwd-image-5hxf gwd-gen-1uatgwdanimation"></gwd-image>
+          <gwd-image id="red_packet_1" source="red_packet.png?1615515071521" scaling="stretch" class="gwd-image-yh46 gwd-gen-1bejgwdanimation"></gwd-image>
+          <gwd-image id="red_packet_2" source="red_packet.png?1615515071521" scaling="stretch" class="gwd-image-1b1b gwd-gen-p3t6gwdanimation"></gwd-image>
+          <gwd-image id="red_packet_3" source="red_packet.png?1615515071521" scaling="stretch" class="gwd-image-1u72 gwd-gen-5uy0gwdanimation"></gwd-image>
+          <gwd-image id="red_packet_4" source="red_packet.png?1615515071521" scaling="stretch" class="gwd-image-1130 gwd-gen-e75mgwdanimation"></gwd-image>
+          <gwd-image id="Dyson-Logo" source="Dyson-Logo.png?1615515071521" scaling="stretch" class="gwd-image-1dta gwd-gen-1yf5gwdanimation"></gwd-image>
+          <gwd-image id="nestle-logo-black-and-white" source="nestle-logo-black-and-white.png?1615515071521" scaling="stretch" class="gwd-image-4kim gwd-gen-184ngwdanimation"></gwd-image>
+          <gwd-image id="sony-logo-png-transparent" source="sony-logo-png-transparent.png?1615515071521" scaling="stretch" class="gwd-image-uv7k gwd-gen-18pqgwdanimation"></gwd-image>
+          <gwd-image id="Philips-Logo" source="Philips-Logo.png?1615515071521" scaling="stretch" class="gwd-image-1epo gwd-gen-g4wcgwdanimation"></gwd-image>
+          <gwd-image id="gwd-image_5" source="1200px-Huawei_Standard_logo.svg.png?1615515071521" scaling="stretch" class="gwd-image-yqjf gwd-gen-1mq3gwdanimation"></gwd-image>
+          <gwd-image id="Tefal_logo_logotype" source="Tefal_logo_logotype.png?1615515071521" scaling="stretch" class="gwd-image-101k gwd-gen-1w6vgwdanimation"></gwd-image>
+          <gwd-image id="gwd-image_6" source="Panasonic_logo__Blue_.svg.png?1615515071521" scaling="stretch" class="gwd-image-1quj gwd-gen-17oygwdanimation"></gwd-image>
+          <gwd-image id="samsung-logo" source="samsung-logo.png?1615515071521" scaling="stretch" class="gwd-image-j5u0 gwd-gen-1o08gwdanimation"></gwd-image>
+          <gwd-image id="ml-2k9hadal-logo-2" source="ml-2k9hadal-logo-2.jpg?1615515071521" scaling="stretch" class="gwd-image-8n76 gwd-gen-19dygwdanimation"></gwd-image>
+          <gwd-image id="eb1eacd6c4c846b53c9b2fc508bc0fab" source="eb1eacd6c4c846b53c9b2fc508bc0fab.png?1615515071521" scaling="stretch" class="gwd-image-fs7v gwd-gen-1lo2gwdanimation"></gwd-image>
+          <button id="shopnowbutton" class="gwd-button-zhfu gwd-gen-2bncgwdanimation">SHOP NOW</button>
+          <gwd-image id="mouse_click" source="mouse_click.png?1615515071521" scaling="stretch" class="gwd-image-ppb6 gwd-gen-niwkgwdanimation"></gwd-image>
+          <gwd-image id="moomooo" source="2.2moomoo.jpg?1615515071521" scaling="stretch" class="gwd-image-1gac gwd-image-by8e gwd-gen-a2udgwdanimation"></gwd-image>
+          <gwd-image id="gwd-image_20" source="2.2moomoo.jpg?1615515071521" scaling="stretch" class="gwd-image-1gac gwd-image-5hxf gwd-gen-1uatgwdanimation"></gwd-image>
           <button id="button_8" class="gwd-button-tm6i gwd-button-dh8h gwd-gen-1gzygwdanimation">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.84182 3.13514C9.04327 3.32401 9.05348 3.64042 8.86462 3.84188L5.43521 7.49991L8.86462 11.1579C9.05348 11.3594 9.04327 11.6758 8.84182 11.8647C8.64036 12.0535 8.32394 12.0433 8.13508 11.8419L4.38508 7.84188C4.20477 7.64955 4.20477 7.35027 4.38508 7.15794L8.13508 3.15794C8.32394 2.95648 8.64036 2.94628 8.84182 3.13514Z" fill="#000000" fill-rule="evenodd" clip-rule="evenodd"></path>
             </svg>
             <span id="backbutton8">Go Back</span>
           </button>
-          <gwd-image id="Asset_2_2" source="Asset_2.svg?1615474546087" scaling="stretch" class="gwd-image-qnlc"></gwd-image>
+          <gwd-image id="Asset_2_2" source="Asset_2.svg?1615515071521" scaling="stretch" class="gwd-image-qnlc"></gwd-image>
         </div>
       </gwd-page>
       <gwd-page id="page1_3" class="gwd-page-wrapper gwd-lightbox gwd-page-1043" data-gwd-width="1000px" data-gwd-height="450px" data-gwd-name="Lucky Draw">
@@ -7034,7 +7086,7 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
             </div>
             <!--Waves end-->
           </div>
-          <gwd-image id="Asset_2_3" source="Asset_2.svg?1615474546087" scaling="stretch" class="gwd-image-qnlc"></gwd-image>
+          <gwd-image id="Asset_2_3" source="Asset_2.svg?1615515071521" scaling="stretch" class="gwd-image-qnlc"></gwd-image>
           <p class="gwd-p-1kfj text-tool-feedback"><span class="gwd-span-1k9a">#ShopeeLuckyDraw</span></p>
           <svg class="intro" viewBox="0 0 200 86">
             <text text-anchor="start" x="10" y="30" class="text text-stroke" clip-path="url(#text1)">Spend &amp; Win Big Prizes!</text>
@@ -7049,10 +7101,10 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
           <p class="gwd-p-bige gwd-p-1ddi gwd-gen-kx0xgwdanimation text-tool-feedback">iPad Air</p>
           <p class="gwd-p-bige gwd-p-1pdv gwd-gen-1sxkgwdanimation text-tool-feedback">Mercedes-Benz C-Class</p>
           <p class="gwd-p-bige gwd-p-1135 gwd-gen-k9s4gwdanimation text-tool-feedback">Apple Smart Watch</p>
-          <gwd-image id="ipad_1" source="ipad_1.png?1615474546087" scaling="stretch" class="gwd-image-1ln0 gwd-gen-2rd5gwdanimation"></gwd-image>
-          <gwd-image id="apple_watch" source="apple_watch.png?1615474546087" scaling="stretch" class="gwd-image-gmjl gwd-gen-196kgwdanimation"></gwd-image>
+          <gwd-image id="ipad_1" source="ipad_1.png?1615515071521" scaling="stretch" class="gwd-image-1ln0 gwd-gen-2rd5gwdanimation"></gwd-image>
+          <gwd-image id="apple_watch" source="apple_watch.png?1615515071521" scaling="stretch" class="gwd-image-gmjl gwd-gen-196kgwdanimation"></gwd-image>
           <button id="button_1" class="gwd-button-u8o8 gwd-button-1nws text-tool-feedback">How to Participate</button>
-          <div data-gwd-motion-path-node="x" class="gwd-motion-path-ourp-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-ourp-anim-y"><gwd-image id="mercedes_1" source="mercedes.png?1615474546087" scaling="stretch" class="gwd-image-9xug gwd-gen-mjw4gwdanimation"></gwd-image></div></div>
+          <div data-gwd-motion-path-node="x" class="gwd-motion-path-ourp-anim-x"><div data-gwd-motion-path-node="y" class="gwd-motion-path-ourp-anim-y"><gwd-image id="mercedes_1" source="mercedes.png?1615515071521" scaling="stretch" class="gwd-image-9xug gwd-gen-mjw4gwdanimation"></gwd-image></div></div>
           <button id="button_3" class="gwd-button-tm6i text-tool-feedback">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.84182 3.13514C9.04327 3.32401 9.05348 3.64042 8.86462 3.84188L5.43521 7.49991L8.86462 11.1579C9.05348 11.3594 9.04327 11.6758 8.84182 11.8647C8.64036 12.0535 8.32394 12.0433 8.13508 11.8419L4.38508 7.84188C4.20477 7.64955 4.20477 7.35027 4.38508 7.15794L8.13508 3.15794C8.32394 2.95648 8.64036 2.94628 8.84182 3.13514Z" fill="#000000" fill-rule="evenodd" clip-rule="evenodd"></path>
@@ -7083,7 +7135,7 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
             </div>
             <!--Waves end-->
           </div>
-          <gwd-image id="Asset_2_4" source="Asset_2.svg?1615474546087" scaling="stretch" class="gwd-image-4wbs"></gwd-image>
+          <gwd-image id="Asset_2_4" source="Asset_2.svg?1615515071521" scaling="stretch" class="gwd-image-4wbs"></gwd-image>
           <svg class="intro_h" viewBox="0 0 200 86">
             <text text-anchor="start" x="10" y="30" class="text_h text-stroke_h" clip-path="url(#text1h)">How to Participate</text>
             <text text-anchor="start" x="10" y="30" class="text_h text-stroke_h text-stroke-2_h" clip-path="url(#text1h)">How to Participate</text>
@@ -7121,7 +7173,7 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
           </span>
           </span>
           </span>
-          <gwd-image id="icons8-info-50" source="icons8-info-50.png?1615474546087" scaling="stretch" class="gwd-image-j8m1 gwd-image-37ht"></gwd-image>
+          <gwd-image id="icons8-info-50" source="icons8-info-50.png?1615515071521" scaling="stretch" class="gwd-image-j8m1 gwd-image-37ht"></gwd-image>
           <gwd-taparea id="gwd-taparea_2" class="gwd-taparea-aj19"></gwd-taparea>
           <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 676 1" class="gwd-line-1m43">
             <line x1="0" x2="676" y1="0.5" y2="0.5"></line>
@@ -7135,13 +7187,13 @@ svg.intro_h.go_h .text-stroke_h:nth-child(6) {
           <svg data-gwd-shape="line" preserveAspectRatio="none" viewBox="0 0 676 1" class="gwd-line-1kcs">
             <line x1="0" x2="676" y1="0.5" y2="0.5"></line>
           </svg>
-          <gwd-image id="red_packet" source="red_packet.png?1615474546087" scaling="stretch" class="gwd-image-zdtf"></gwd-image>
-          <gwd-image id="icons8-coin-48_9" source="icons8-coin-48.png?1615474546087" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-gen-ldcngwdanimation"></gwd-image>
-          <gwd-image id="icons8-coin-48_12" source="icons8-coin-48.png?1615474546087" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-gen-1s8qgwdanimation gwd-image-467s"></gwd-image>
-          <gwd-image id="icons8-coin-48_14" source="icons8-coin-48.png?1615474546087" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-gen-1p2fgwdanimation gwd-image-60zi"></gwd-image>
-          <gwd-image id="icons8-coin-48_15" source="icons8-coin-48.png?1615474546087" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-image-60zi gwd-gen-1lnwgwdanimation gwd-image-4n9b"></gwd-image>
-          <gwd-image id="icons8-coin-48_16" source="icons8-coin-48.png?1615474546087" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-image-60zi gwd-image-4n9b gwd-image-mtnb gwd-gen-1irygwdanimation"></gwd-image>
-          <gwd-image id="icons8-coin-48_10" source="icons8-coin-48.png?1615474546087" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-gen-6azygwdanimation gwd-image-13kl"></gwd-image>
+          <gwd-image id="red_packet" source="red_packet.png?1615515071521" scaling="stretch" class="gwd-image-zdtf"></gwd-image>
+          <gwd-image id="icons8-coin-48_9" source="icons8-coin-48.png?1615515071521" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-gen-ldcngwdanimation"></gwd-image>
+          <gwd-image id="icons8-coin-48_12" source="icons8-coin-48.png?1615515071521" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-gen-1s8qgwdanimation gwd-image-467s"></gwd-image>
+          <gwd-image id="icons8-coin-48_14" source="icons8-coin-48.png?1615515071521" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-gen-1p2fgwdanimation gwd-image-60zi"></gwd-image>
+          <gwd-image id="icons8-coin-48_15" source="icons8-coin-48.png?1615515071521" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-image-60zi gwd-gen-1lnwgwdanimation gwd-image-4n9b"></gwd-image>
+          <gwd-image id="icons8-coin-48_16" source="icons8-coin-48.png?1615515071521" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-image-j4ku gwd-image-467s gwd-image-60zi gwd-image-4n9b gwd-image-mtnb gwd-gen-1irygwdanimation"></gwd-image>
+          <gwd-image id="icons8-coin-48_10" source="icons8-coin-48.png?1615515071521" scaling="stretch" class="gwd-image-26hr gwd-image-1b5r gwd-image-t022 gwd-image-1alw gwd-image-fn03 gwd-gen-6azygwdanimation gwd-image-13kl"></gwd-image>
         </div>
       </gwd-page>
     </gwd-pagedeck>
